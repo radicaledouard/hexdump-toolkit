@@ -1,10 +1,6 @@
 # hexdump-toolkit
 
-> A hexdump analysis toolkit in C
-
-## Overview
-
-A fast, minimal hexdump tool for binary analysis. Supports custom formatters, diffing, and pattern search.
+A hexdump analysis and binary inspection toolkit. Parse, filter, and visualize binary data.
 
 ## Features
 
@@ -17,19 +13,17 @@ A fast, minimal hexdump tool for binary analysis. Supports custom formatters, di
 ## Build
 
 ```bash
-gcc -O2 -o hexdump hexdump.c
+make
 ```
 
 ## Usage
 
 ```bash
 ./hexdump file.bin
-./hexdump -f binary file.bin
-./hexdump --diff file1.bin file2.bin
+./hexdump -l 8 file.bin
+cat file | ./hexdump
 ```
 
 ## License
 
 MIT
-
-## Co-authored with [@SamyAlderson](https://github.com/SamyAlderson)
